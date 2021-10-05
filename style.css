@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+    color: greenyellow;
+}
+
+section {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 100%;
+height: 100vh;
+scroll-snap-align: center;
+}
+
+section h1 {
+    font-size: 5rem;
+}
+
+section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 1.5rem;
+    
+}
+
+section#home {
+    background: url('./forest.jpg');
+}
+
+section#about {
+    background: url('./waterfall.jpg');
+}
+
+section#projects {
+    background: url('./buddah.jpg');
+}
+
+section#blog {
+    background: url('./space.jpg');
+}
+
+section#contact {
+    background: url('./jungle.jpg');
+}
+
+section#projects img {
+    height: 150px;
+    width: 300px;
+    margin-top: 30px;
+}
+
+section#projects a {
+    color: white;
+}
+
+section#projects a:hover {
+    color:yellowgreen;
+}
+
+section#contact iframe {
+    margin-top: 200px;
+    margin-right: 350px;
+}
